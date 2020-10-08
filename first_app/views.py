@@ -5,9 +5,9 @@ def index (request):
     my_dict = {'insert_me': "Hello, I'm from first_app/index.html. I'm passed as a value of a key in an object."}
     return render(request, 'first_app/index.html', context=my_dict)
 
-# def about (request):
-#     return HttpRequest("Here's our about page")
+def about (request):
+    return HttpResponse("Here's our about page")
 
-# def contact(request):
-#     return HttpRequest("<h1>CONTACTS</h1>")
+def contact(request):
+    return HttpResponse("<h1>CONTACTS</h1>")
 # Create your views here.
